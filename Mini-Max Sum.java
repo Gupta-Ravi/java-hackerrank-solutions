@@ -15,15 +15,16 @@ public class Solution {
 
         for (int i = 0;i<5 ;i++ ) {
             for (int j=0;j<5 ;j++ ) {
-                if(j!=i) sum = sum + arr[j] ;
+                if(j!=i) sum = sum + arr[j] ; // Leave one element at a time out of 5 
             }
             if(i==0){
+                // Starting values are assigned into the sum
                 min = sum ;
                 max = sum ;
             }
             if(sum < min ) min = sum ;
             if(sum > max ) max = sum ;
-            sum = 0 ;
+            sum = 0 ; // Reset the sum each time
         }
         System.out.println(min+" "+max);
     }

@@ -13,11 +13,13 @@ public class Solution {
         int aPoints = 0 ; 
         int bPoints = 0 ;
         List<Integer> res = new ArrayList<>() ;
+
         for (int i = 0; i < 3; i++) {
-            if( a.get(i) > b.get(i) ) aPoints++ ;
-            else if ( a.get(i) < b.get(i) ) bPoints++ ;
+            if( a.get(i) > b.get(i) ) aPoints++ ; // Increment in the Points of a
+            else if ( a.get(i) < b.get(i) ) bPoints++ ; // Increment in the Points of b
         }
-        res.add(aPoints) ;
+        // Adding the Points result List
+        res.add(aPoints) ; 
         res.add(bPoints) ;
         return res ;
     }
